@@ -2,11 +2,11 @@
 \usepackage{fullpage}
 \usepackage{amsmath} \usepackage{amssymb} \usepackage{url} \textheight=10in
 \pagestyle{empty}
-%\raggedbottom
+% \raggedbottom
 \raggedright
 
-%  \renewcommand{\encodingdefault}{cg}
-  %\renewcommand{\rmdefault}{lgrcmr}
+% \renewcommand{\encodingdefault}{cg}
+% \renewcommand{\rmdefault}{lgrcmr}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 % DEFINITIONS FOR RESUME
@@ -16,15 +16,15 @@
     \textsc{#1}} \vspace*{-6pt} \lineunder} \newcommand{\employer}[3]{{
     \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\ }}
 \newcommand{\contact}[3]{
-\vspace*{-8pt}
-\begin{center}
-{\LARGE \scshape {#1}}\\ #2 \lineunder #3
-\end{center}
-\vspace*{-8pt} }
+  \vspace*{-8pt}
+  \begin{center}
+    {\LARGE \scshape {#1}}\\ #2 \lineunder #3
+  \end{center}
+  \vspace*{-8pt} }
 \newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep
       -2pt}}{\vspace*{4pt}\end{list}} \newcommand{\schoolwithcourses}[4]{
   \textbf{#1} #2 \\ #3\\ #4 \\ Selected Coursework:\\
-\vspace*{5pt} } \newcommand{\school}[4]{ \textbf{#1} #2 $\bullet$ #3\\ #4
+  \vspace*{5pt} } \newcommand{\school}[4]{ \textbf{#1} #2 $\bullet$ #3\\ #4
   \\ }
 % END RESUME DEFINITIONS
 
@@ -39,6 +39,16 @@
   sarcilav@eafit.edu.co, }
 
 \header{Work History}
+
+\employer{Art.sy}{January 2010 - May 2010}{Ruby on Rails lead developer and Quality Assurance Engineer}
+\begin{achievements}
+\item Design and Develop a LSH algorithm and data structure for it inside mongoDB
+\item Migrate legacy database (SQL) to mongoDB
+\item Redesign the database model
+\item Code new features using TDD
+\item Write Performance tests for db and memcached servers
+\end{achievements}
+
 \employer{Ceiba Software House S.A.S (Medell\'in, Colombia)}{October 2008- June 2010}{Developer Engineer}
 \begin{achievements}
 \item Developed of different sub-modules and helper libraries for a Java "send-only" mail system
@@ -57,15 +67,15 @@
   2007-Current}{Director and Teacher}
 \begin{achievements}
 \item Teach simple and advanced data structures
-\item Teach advanced algorithms for programming contest 
+\item Teach advanced algorithms for programming contest
 \end{achievements}
 
 \header{Education}
 
 \schoolwithcourses{Universidad EAFIT (Medell\'in, Colombia)}{}
 {2007-Current Computer Science}
-{Current Cumulative (GPA): 4.4/5} 
-  \area{Computer Science:}{
+{Current Cumulative (GPA): 4.4/5}
+\area{Computer Science:}{
   Computer Graphics $\cdot$ Distributed Virtual Reality $\cdot$ Programming Languages
   $\cdot$ Data Structures and Algorithms $\cdot$ Automata \& Computation $\cdot$
   Numerical Analysis $\cdot$ Databases $\cdot$ Operating Systems
@@ -84,12 +94,13 @@
 
 \header{Skills}
 \begin{achievements}
-\item Proficient in software development using C/C++, Ruby, Java (J2SE) and JavaScript.
-\item Proficient in Web Development using Rails
-\item Proficient in TDD and BDD
-\item Familiar with Python and Bash
-\item Familiar with GNU/Linux and Mac OS X
-\item Familiar with technologies such as Git and SVN
+\item Proficient in software development using C/C++ and Ruby.
+\item Proficient in Web Development using Rails.
+\item Proficient in TDD.
+\item Familiar with BDD.
+\item Familiar with Javascript, Python and Bash.
+\item Familiar with GNU/Linux and Mac OS X.
+\item Familiar with technologies such as Git and SVN.
 \end{achievements}
 
 \header{Languages}
@@ -109,39 +120,30 @@
 
 \header{Achievements}
 \begin{achievements}
-\item Regional Math Olympics, University of Antioquia, Final Phase Participant, 10/17/06-10/20/06
-\item National Math Week, San Marcos, Participant, 11/2/06
-\item Iberon-American Mathematics Olympiad, Particpant, 2009
+\item Regional Math Olympics, University of Antioquia, Final Phase Participant, 2006
+\item National Math Week, San Marcos, Participant, 11/2/2006
+\item Iberon-American Mathematics Olympiad, Participant, 2009
 \item  XV Contest for high school mathematics and physics , EAFIT University, First  place, 2006
-\item   Colombian Math Olympics, University of Antonio Nari–o, First place, 03/06
-\item   Colombian Math Olympics, University of Antonio Nari–o, First place, 10/06
+\item   Colombian Math Olympics, University of Antonio Narino, First place, 03/2006
+\item   Colombian Math Olympics, University of Antonio Narino, First place, 10/2006
 \item Intercollegiate Math Olympics, San Marcos, First place, 2006
 \item  First GEMIS-OE Programming Contest, EAFIT University, First place, 2008
 \item  Second GEMIS Programming Contest, EAFIT University, First, 2008
-\item  National Programming Contest ACIS REDIS, Medell’n Colombia, Sixth place, 2008
+\item  National Programming Contest ACIS REDIS, Medellin Colombia, Sixth place, 2008
 \item  South American Contest ACM ICPC, Universidad de los Andes,  Second place,  2008
- \item   ACM-ICPC World Finals, Stockholm Sweden, Honorable mention, 2009
-\item  National Programming Contest ACIS REDIS, Medell’n Colombia, Second place, 2009
-\item "Programming Challenges", University of S‹o Paulo, Participant,  2010
+\item   ACM-ICPC World Finals, Stockholm Sweden, Honorable mention, 2009
+\item  National Programming Contest ACIS REDIS, Medellin Colombia, Second place, 2009
+\item "Programming Challenges", University of Sao Paulo, Participant,  2010
 \item  South American Contest ACM ICPC, Universidad de los Andes,  Second place,  2010
- \item   ACM-ICPC World Finals, Orlando Florida, Participant, 05/27/11-01/06/11
+\item   ACM-ICPC World Finals, Orlando Florida, Participant, 05/27/2011-01/06/2011
 \end{achievements}
 
-\header{Current Project}
-\employer{art.sy}{January 2010 - }{Ruby on Rails lead developer and Quality Assurance Engineer}
-\begin{achievements}
-\item Design and Develop a LSH algorithm and data structure for it inside mongoDB
-\item Migrate legacy database (SQL) to mongoDB
-\item Redesign the database model
-\item Code new features
-\item Write Performance tests for db and memcached servers
-\end{achievements}
 
 \header{Recently completed projects.}
 \employer{Streetmavens}{April 2010- December 2010}{Lead Developer}
 \begin{achievements}
 \item Designed and Developed an algorithm to find relations between users using their publications
-\item Migrated it from a linux machine to a heroku environment 
+\item Migrated it from a linux machine to a heroku environment
 \item Redesigned the crawl system for tweets and facebook messages
 \item Implemented a IP-based geo-localitation system
 \item \url{http://streetmavens.com/}
@@ -157,7 +159,7 @@
 \employer{ World of WrestlingHirschfactor Facebook App} {May 2010 - December 2010} {Lead Developer}
 \begin{achievements}
 \item Developed a simple cms system to keep up to date all the USA wrestling community
-\item Deployed at Enyine Yard 
+\item Deployed at Enyine Yard
 \item  \url{http://www.worldofwrestling-roller.com/}
 \end{achievements}
 
@@ -166,5 +168,5 @@
 \item \url{http://github.com/sarcilav/}
 \end{achievements}
 \end{document}
- 
+
 
