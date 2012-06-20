@@ -29,6 +29,10 @@
   \textbf{#1} #2 \\ #3\\ #4 \\ Selected Coursework:\\
   \vspace*{5pt} } \newcommand{\school}[4]{ \textbf{#1} #2 $\bullet$ #3\\ #4
   \\ }
+  \newenvironment{achievementsnocoursework}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep
+      -2pt}}{\vspace*{4pt}\end{list}} \newcommand{\schoolwithcoursesnocoursework}[4]{
+  \textbf{#1} #2 \\ #3\\ #4 \\ \vspace*{5pt} } \newcommand{\schoolnocourse}[4]{ \textbf{#1} #2 $\bullet$ #3\\ #4
+  \\ }
 % END RESUME DEFINITIONS
 
 \begin{document}
@@ -46,7 +50,7 @@
 
 \schoolwithcourses{EAFIT University (Medell\'in, Colombia) \\ Computer Science}{}
 {2007-2012}
-{Current Cumulative (GPA): 4.1/5}
+{Cumulative (GPA): 4.1/5}
 \area{Computer Science:}{
   Programming Languages
   $\cdot$ Data Structures and Algorithms $\cdot$ Operating Systems
@@ -54,17 +58,26 @@
 
 \medskip
 
+\schoolwithcoursesnocoursework{Training on the Hubzero project - Purdue University}{}
+{August 2011 - December 2011}
+{Training on the implementation and support for a supercomputing platform and the project that enables its usage.}
 
 \bigskip
+
 \header{Work History}
 
 \employer{EAFIT University (Medell\'in, Colombia) \\ R+D In Computer in Education}{Jan 2011 - present}{Intern Research Assistant}
 \begin{achievements}
 \item Ubiquitous technology project: Interactive TV application to let children in rural areas learn about their context.
-\item Project for the implementation of a NanoHub mirror in Latin America.
+\item Project for the implementation of a NanoHub mirror to Latin America.
 \end{achievements}
 
+\medskip
 
+\employer{Kogi Mobile (Medell\'in, Colombia)}{September 2011}{iOS developer}
+\begin{achievements}
+\item Work on the technical development of iOS applications.
+\end{achievements}
 
 \bigskip
 \header{Skills}
