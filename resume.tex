@@ -1,13 +1,22 @@
 \documentclass{article}
 \usepackage{fullpage}
-\usepackage{needspace} \usepackage{amsmath} \usepackage{amssymb} \usepackage{url} \textheight=10in
+\usepackage{fancyhdr} \usepackage{needspace} \usepackage{amsmath} \usepackage{amssymb} \usepackage{url} %\textheight=10in
 
-\pagestyle{empty}
-% \raggedbottom
+\pagestyle{fancy}
+\fancypagestyle{firstpage}
+{
+  %\fancyhead[LE,RO]{Computer Science Department}
+  % \fancyhead[LO,RE]{second state}
+  % \fancyfoot[C]{\thepage}
+}
+
 \raggedright
 
-% \renewcommand{\encodingdefault}{cg}
-% \renewcommand{\rmdefault}{lgrcmr}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\setlength{\topmargin}{0.0in}
+\setlength{\footskip}{4.0in}
+
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 % DEFINITIONS FOR RESUME
@@ -16,7 +25,7 @@
 \newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt}
     \textsc{#1}} \vspace*{-6pt} \lineunder} \newcommand{\employer}[3]{{
     \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\ }}
-    \newcommand{\subheader}[1]{{
+\newcommand{\subheader}[1]{{
     \underline{\textbf{\emph{#1}}}\\ }}
 \newcommand{\contact}[3]{
   \vspace*{-8pt}
@@ -29,17 +38,18 @@
   \textbf{#1} #2 \\ #3\\ #4 \\ Selected Coursework:\\
   \vspace*{5pt} } \newcommand{\school}[4]{ \textbf{#1} #2 $\bullet$ #3\\ #4
   \\ }
-  \newenvironment{achievementsnocoursework}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep
+\newenvironment{achievementsnocoursework}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep
       -2pt}}{\vspace*{4pt}\end{list}} \newcommand{\schoolwithcoursesnocoursework}[4]{
   \textbf{#1} #2 \\ #3\\ #4 \\ \vspace*{5pt} } \newcommand{\schoolnocourse}[4]{ \textbf{#1} #2 $\bullet$ #3\\ #4
   \\ }
 % END RESUME DEFINITIONS
 
 \begin{document}
+\thispagestyle{firstpage}
 
-\small
-\smallskip
-\vspace*{-44pt}
+% \small
+% \smallskip
+% \vspace*{1in}
 
 \contact{Sergio Botero Uribe} {Medellin Colombia.     
   Phone: (+57) 315 454 81 36} { $\bullet$ sergiobuj@gmail.com $\bullet$
@@ -73,42 +83,47 @@
 \end{achievements}
 \medskip
 
-\employer{Universidad EAFIT (Medell\'in, Colombia) \\ R+D In Computer in Education}{Jan 2011 - Jul 2012}{Intern Research Assistant}
-\begin{achievements}
-\item Ubiquitous technology project: Interactive TV application to let children in rural areas learn about their context.
-\begin{itemize}
-\renewcommand{\labelitemi}{$\heartsuit$}
-\item (Side project) Developed an iOS application for the university. Let students access grades, class schedule and general information.
-\end{itemize}
-\item Project for the implementation of a NanoHub mirror for Latin America.
-\begin{itemize}
-\renewcommand{\labelitemi}{$\rightarrow$}
-\item Creation of scripts for automated installs of computer cluster.
-\item[$\heartsuit$] (Side project) Started a Web application to help people create submission files required to send a job to a cluster that uses Condor HTC.
-\end{itemize}
-\end{achievements}
+\begin{samepage}
+  \employer{Universidad EAFIT (Medell\'in, Colombia) \\ R+D In Computer in Education}{Jan 2011 - Jul 2012}{Intern Research Assistant}
+  \begin{achievements}
+  \item Ubiquitous technology project: Interactive TV application to let children in rural areas learn about their context.
+    \begin{itemize}
+      \renewcommand{\labelitemi}{$\rightarrow$}
+    \item (Side project) Developed an iOS application for the university. Let students access grades, class schedule and general information.
+    \end{itemize}
+  \item Project for the implementation of a NanoHub mirror for Latin America.
+    \begin{itemize}
+      \renewcommand{\labelitemi}{$\rightarrow$}
+    \item Creation of scripts for automated installs of computer cluster.
+    \item (Side project) Started a Web application to help people create submission files required to send a job to a cluster that uses Condor HTC.
+    \end{itemize}
+  \end{achievements}
+\end{samepage}
 
 \medskip
 
 \employer{Kogi Mobile (Medell\'in, Colombia)}{September 2011}{iOS developer}
 \begin{achievements}
 \item Work on the technical development of iOS applications.
-\begin{itemize}
-\renewcommand{\labelitemi}{$\rightarrow$}
-\item Worked on adapting a video advertising component for a TV show application.
-\item Worked on the development of a new version for an already existing application.
-\end{itemize}
+  \begin{itemize}
+    \renewcommand{\labelitemi}{$\rightarrow$}
+  \item Worked on adapting a video advertising component for a TV show application.
+  \item Worked on the development of a new version for an already existing application.
+  \end{itemize}
 \end{achievements}
 
-\employer{39 Inc}{May 2012 - }{iOS developer}
-\begin{achievements}
-\item Part of the iOS development team.
-\begin{itemize}
-\renewcommand{\labelitemi}{$\rightarrow$}
-\item Developer of a native iOS application for an existing Web application.
-\item Worked on the development of a new application. Had to solve issues with memory management, networking and basic table views.
-\end{itemize}
-\end{achievements}
+
+\begin{samepage}
+  \employer{39 Inc}{May 2012 - }{iOS developer}
+  \begin{achievements}
+  \item Part of the iOS development team.
+    \begin{itemize}
+      \renewcommand{\labelitemi}{$\rightarrow$}
+    \item Developer of a native iOS application for an existing Web application.
+    \item Worked on the development of a new application. Had to solve issues with memory management, networking and basic table views.
+    \end{itemize}
+  \end{achievements}
+\end{samepage}
 
 \bigskip
 \header{Skills}
@@ -166,7 +181,7 @@ You can find us on \url{http://zinergia.co}
 \smallskip
 \begin{achievements}
 \item All projects and current work can be found at my GitHub profile (\url{https://github.com/sergiobuj/})
-\smallskip
+  \smallskip
 \item Business QR Card App for iPhone (Not in store anymore)
 \end{achievements}
 
