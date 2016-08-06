@@ -1,3 +1,3 @@
-My Resume - Sergio Botero
+Resume
 
-[SergioBoteroResume.pdf](SergioBoteroResume.pdf?raw=true)
+[Sergio Botero Resume in PDF](SergioBoteroResume.pdf?raw=true)
